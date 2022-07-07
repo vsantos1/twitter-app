@@ -7,6 +7,7 @@ interface ButtonProps {
   outlined?: Boolean;
 }
 export const Container = styled.div`
+  z-index: 0;
   display: flex;
   flex-direction: column;
   max-height: 100vh;
@@ -18,6 +19,8 @@ export const Container = styled.div`
   }
 `;
 export const Banner = styled.div`
+  z-index: 0;
+
   flex-shrink: 0;
   width: 100%;
   height: min(33vw, 200px);
@@ -27,6 +30,8 @@ export const Banner = styled.div`
 `;
 
 export const Avatar = styled.div`
+  z-index: 0;
+
   width: max(45px, min(135px, 20vw));
   height: max(45px, min(135px, 20vw));
   background-image: url(${avatar});
@@ -39,6 +44,8 @@ export const Avatar = styled.div`
 `;
 export const Dataprofile = styled.div`
   // top , left, bottom, left
+  z-index: 0;
+
   padding: min(10vw, 4rem) 16px 0;
   display: flex;
   flex-direction: column;

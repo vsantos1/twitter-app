@@ -1,6 +1,7 @@
 import React from "react";
+import TwitterFeed from "../TwitterFeed";
 import { Container, Banner, Avatar, Dataprofile, CalendarIcon, LocationIcon, Follows, EditButton } from "./styles";
-const UserProfile: React.FC = () => {
+const UserProfile = () => {
   return (
     <Container>
       <Banner>
@@ -10,11 +11,11 @@ const UserProfile: React.FC = () => {
         <EditButton outlined={true}> Edit profile</EditButton>
 
         <h1>Vinicius Gabriel</h1>
-        <h2>@vsantos1</h2>
+        <h2>@vsantos7331</h2>
         <p>
-          Working at
+          Hello world, open to work...Github
           <a href="www.google.com" target="_blank">
-            @Google
+            @vsantos1
           </a>
         </p>
         <ul>
@@ -35,6 +36,7 @@ const UserProfile: React.FC = () => {
           </span>
         </Follows>
       </Dataprofile>
+      <TwitterFeed />
     </Container>
   );
 };
